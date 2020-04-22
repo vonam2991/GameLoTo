@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <TextView
+        android:text="Game LoTo"
+        android:textColor="#D60505"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Nhập số bắt đầu"
+        android:textSize="30sp"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:maxLength="5"
+        android:layout_marginTop="20sp"
+        android:id="@+id/edtSoBatDau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Nhập số kết thúc"
+        android:textSize="30sp"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:maxLength="5"
+        android:layout_marginTop="20sp"
+        android:id="@+id/edtSoKetThuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Thêm"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:id="@+id/btnThem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="Tạo lại"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnTaoLai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnRandom"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Random"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtKetQua"
+            android:text=" 1 - 2 - 4"
+            android:textColor="#090909"
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+</LinearLayout>
